@@ -1,35 +1,38 @@
 {{ define "ProGamers" }}
 <!DOCTYPE html>
-<html lang = 'en'>
+<html lang='en'>
+
 <head>
-<title></title>
+    <title></title>
 </head>
+
 <body>
- <center>
-<h2> 2022 Top Earning E-Sports (Local Host: 8117) </h2>
-<table border=1>
- <thead>
- <tr>
- <td>Name</td>
- <td>Alias</td>
-<td>Game</td>
-<td>PrizePool</td>
+    <center>
+        <h2> 2022 Top Earning E-Sports (Local Host: 8117) </h2>
+        <table border=1>
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Alias</td>
+                    <td>Game</td>
+                    <td>PrizePool</td>
 
 
- </tr>
- </thead>
- <tbody>
- {{ range . }}
- <tr>
- <td>{{ .Name }}</td>
- <td>{{ .Alias }}</td>
-<td>{{ .Game }}</td>
-<td>{{ .PrizePool }}</td>
- </tr>
- {{ end }}
- </tbody>
-</table>
-</center>
+                </tr>
+            </thead>
+            <tbody>
+                {{ range . }}
+                <tr>
+                    <td>{{ .Name }}</td>
+                    <td>{{ .Alias }}</td>
+                    <td>{{ .Game }}</td>
+                    <td>{{ .PrizePool }}</td>
+                </tr>
+                {{ end }}
+            </tbody>
+        </table>
+    </center>
 </body>
+
 </html>
 {{ end }}
